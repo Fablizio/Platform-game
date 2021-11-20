@@ -6,7 +6,7 @@
      Helvetica,
      sans-serif;
 }
-
+ /* Title */
 h1 {
     text-align: center;
    
@@ -22,18 +22,37 @@ h1 {
     margin: auto;
 }
 
+/* hero */
 
-
-#character {
-    background-image: url(/css/img/personaggio-13.png);
+.character {
+    background-image: url(./img/sprite.png);
     background-size: cover;
-    width: 85px;
+    width: 100px;
     height: 100px;
     position: relative;
     top: 300px;
 }
 
-.animate {
+.a {
+    background: url(./img/sprite2.png);
+}
+
+
+.run {
+    animation: animate 1s steps(6) reverse infinite;
+}
+
+@keyframes animate {
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position: -1536px;
+    }
+
+}
+
+.jumper {
     animation: jump 0.3s linear;
 }
 
@@ -55,6 +74,8 @@ h1 {
     }
 }
 
+/* enemy */
+
 #block {
     background-color: blue;
     width: 40px;
@@ -75,7 +96,38 @@ h1 {
     }
 }
 
+
+/* score  */
 p {
     text-align: center;
   
 }
+
+
+
+ /* buttons */
+.grid {
+  display: grid;
+  position: absolute;
+  top: 70%;
+  left: 75%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". W ."
+    "S A D";
+  width: 150px;
+  height: 100px;
+}
+
+.W { grid-area: W; }
+
+.A { grid-area: A; }
+
+.S { grid-area: S; }
+
+.D { grid-area: D; }
+
+

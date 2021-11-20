@@ -1,18 +1,32 @@
 <!DOCTYPE html>
-<html lang="en" onclick="jump()">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <title>Jump Game</title>
+      <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <h1>Edgy Adventure (work in progress)</h1>
+    <br>
+    <br>
+    <h1 class="animate__animated animate__bounce">Edgy Adventure (work in progress)</h1>
     <div class="game">
-        <div id="character"></div>
+        <div id="character" class="run character"></div>
         <div id="block"></div>
     </div>
+    
+    <div class="grid">
+        <button class="W">W</button>
+        <button class="A">A</button>
+        <button class="S">S</button>
+        <button class="D">D</button>
+      </div>
+      <h3 id="GameOver"></h3>
     <p>Score: <span id="scoreSpan"></span></p>
 </body>
 <script src="js/script.js"></script>
