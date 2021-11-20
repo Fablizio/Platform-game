@@ -48,7 +48,7 @@ const checkDead = setInterval(() => {
       document.getElementById("GameOver").innerHTML = "Game Over. score: " + Math.floor(counter / 100);
     //   alert("Game Over. score: " + Math.floor(counter / 100));
     let newGame = prompt ("New Game? Y/N")
-    if (newGame === "N" || "n") {
+    if (newGame === "N") {
         window.location.replace("https://edgemony.com/");
     }
 
