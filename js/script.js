@@ -17,14 +17,6 @@ S.addEventListener("click", () => {
 }
 );
 
-D.addEventListener("click", () => {
-    character.classList.add("animate__animated animate__slideOutRight");
-    setTimeout(() => {
-        character.classList.remove("animate__animated animate__slideOutRight");
-    }, 1000);
-}
-);
-
 
 function jump() {
     if (character.classList == "jumper") {
@@ -54,7 +46,7 @@ const checkDead = setInterval(() => {
       counter = 0;
     }
    
-      block.style.animation = "block 1s infinite linear";
+      block.style.animation = "block 2s infinite linear";
   } else {
       counter++;
       document.getElementById("scoreSpan").innerHTML = Math.floor(counter / 100);

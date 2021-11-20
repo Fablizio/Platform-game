@@ -26,7 +26,6 @@ h1 {
 
 .character {
     background-image: url(./img/sprite.png);
-    background-size: cover;
     width: 100px;
     height: 100px;
     position: relative;
@@ -39,7 +38,7 @@ h1 {
 
 
 .run {
-    animation: animate 1s steps(6) reverse infinite;
+    animation: animate 1s steps(6) infinite;
 }
 
 @keyframes animate {
@@ -47,7 +46,7 @@ h1 {
         background-position: 0;
     }
     to {
-        background-position: -1536px;
+        background-position: -600px;
     }
 
 }
@@ -77,24 +76,41 @@ h1 {
 /* enemy */
 
 #block {
-    background-color: blue;
-    width: 40px;
-    height: 40px;
+    background-image: url(./img/enemy.png);
+    width: 65px;
+    height: 64px;
     position: relative;
-    top: 260px;
+    top: 236px;
     left: 500px;
-    animation: block 1s infinite linear;
+    animation: block 2s infinite linear; 
 }
+
+.moveEnemy {
+     width: 65px;
+    height: 64px;
+     animation: move 1s infinite steps(2);
+}
+
+ @keyframes move {
+      from {
+           background-position: 0px;
+      }
+      to {
+         background-position: -142px;
+      }
+
+ }
 
 @keyframes block {
     0% {
-        left: 1000px
+        left: 1000px;
     }
 
     100% {
-        left: -30px
+        left: -30px;
     }
 }
+
 
 
 /* score  */
