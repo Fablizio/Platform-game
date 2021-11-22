@@ -13,7 +13,7 @@ h1 {
 }
 
 .game {
-    background-image: url("/css/img/teahub.io-google-pixel-wallpaper-94794.png");  
+    background-image: url("./css/img/teahub.io-google-pixel-wallpaper-94794.png");  
     background-size: contain;
     width: 1000px;
     
@@ -82,7 +82,7 @@ h1 {
     position: relative;
     top: 236px;
     left: 500px;
-    animation: block 1s infinite linear; 
+    animation: block 2s infinite linear; 
 }
 
 .moveEnemy {
